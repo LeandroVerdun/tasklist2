@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import angelLogo from './imagenes/redengel7.1.png';
+import ListaDeTareas from './componentes/Red-Task-List';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="task-app">
+      <div className='Red-Angel_logo-contenedor'>
+        <img 
+        src={angelLogo} 
+        className='Red-Angel-logo' 
+        />
+      </div>
+      <div className='tareas-lista-principal'>
+        <h1>Red Task</h1>
+        <ListaDeTareas />        
+      </div>
+        
     </div>
   );
 }
